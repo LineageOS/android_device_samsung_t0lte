@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAfn//+Tc\u003d",
+        "filename": "DeviceSettings/res/values-fr/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-10T18:11:13Z",
+      "side": 1,
+      "message": "Pourquoi l\u0027infinitif et pas le participe passé Désactivé ?",
+      "revId": "9250ee4b33259beaad30f6e62fe1d139553fc55b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfn//+TY\u003d",
+        "filename": "DeviceSettings/res/values-fr/arrays.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-10T18:11:13Z",
+      "side": 1,
+      "message": "Idem ?",
+      "revId": "9250ee4b33259beaad30f6e62fe1d139553fc55b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAfn//+Tg\u003d",
+        "filename": "DeviceSettings/res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-05-10T18:11:13Z",
+      "side": 1,
+      "message": "Désactiver",
+      "revId": "9250ee4b33259beaad30f6e62fe1d139553fc55b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
