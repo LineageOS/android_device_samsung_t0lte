@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "iHJe5.o",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "This will probably just confuse users. No user knows what \"voice index\" means.\nHow about \"Modify bluetooth voice volume\" ?",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iDJYb-o",
+        "filename": "DeviceSettings/src/com/cyanogenmod/settings/device/IncallAudio.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "/data/local/audio/ ?",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iFJj47E",
+        "filename": "DeviceSettings/src/com/cyanogenmod/settings/device/IncallAudio.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "whitespaces",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iNJv85A",
+        "filename": "DeviceSettings/src/com/cyanogenmod/settings/device/Startup.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "A, B, C ... :-P",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iBJda.k",
+        "filename": "audio/audio_hw.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "/data/local/audio/ ?",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iPJy93s",
+        "filename": "rootdir/init.smdk4x12.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 523
+      },
+      "writtenOn": "2013-06-08T17:12:25Z",
+      "side": 1,
+      "message": "/data/local/audio/ ?",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
