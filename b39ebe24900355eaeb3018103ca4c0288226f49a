@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "iBIR66w",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Dock audio",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iPImdxU",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Use USB dock audio",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "iBKHqxA",
         "filename": "DeviceSettings/res/values/strings.xml",
         "patchSetId": 2
@@ -13,6 +47,24 @@
       "writtenOn": "2013-06-08T20:58:06Z",
       "side": 1,
       "message": "In-call audio",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iFJ.Q.U",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "iBKHqxA",
       "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -36,6 +88,58 @@
     },
     {
       "key": {
+        "uuid": "iNIjcwQ",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Change headset voice volume",
+      "parentUuid": "iNJ5MzE",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iLIg--g",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Change headphone voice volume",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iJId.78",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Change speaker voice volume",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "iHJe5.o",
         "filename": "DeviceSettings/res/values/strings.xml",
         "patchSetId": 2
@@ -47,6 +151,24 @@
       "writtenOn": "2013-06-08T17:12:25Z",
       "side": 1,
       "message": "This will probably just confuse users. No user knows what \"voice index\" means.\nHow about \"Modify bluetooth voice volume\" ?",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "iHJ5R-w",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-06-09T02:22:55Z",
+      "side": 1,
+      "message": "Change Bluetooth voice volume\n\n(or \u0027Modify\u0027; \u0027Increase/decrease\u0027 is far too long and complicated)",
+      "parentUuid": "iHJe5.o",
       "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
