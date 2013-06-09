@@ -106,6 +106,24 @@
     },
     {
       "key": {
+        "uuid": "iBKIy.Y",
+        "filename": "DeviceSettings/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 5932
+      },
+      "writtenOn": "2013-06-09T03:03:50Z",
+      "side": 1,
+      "message": "I like \"Adjust headset voice volume\" same for headphone, speaker, and bt voice audio. Just another suggestion.",
+      "parentUuid": "iNIjcwQ",
+      "revId": "b39ebe24900355eaeb3018103ca4c0288226f49a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "iLIg--g",
         "filename": "DeviceSettings/res/values/strings.xml",
         "patchSetId": 2
