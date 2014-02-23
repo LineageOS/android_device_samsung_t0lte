@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_406dae31",
+        "filename": "init/init_t0lte.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 5666
+      },
+      "writtenOn": "2014-02-23T11:34:28Z",
+      "side": 1,
+      "message": "It isn\u0027t that important, just cosmeeeeetical.",
+      "revId": "315a519788fde768b43cda9197ad87760c47380f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bae84128_206a2a1b",
+        "filename": "init/init_t0lte.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 5666
+      },
+      "writtenOn": "2014-02-23T11:34:28Z",
+      "side": 1,
+      "message": "AFAIK it should be I7100, otherwise it could be confused with I7105",
+      "revId": "315a519788fde768b43cda9197ad87760c47380f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
