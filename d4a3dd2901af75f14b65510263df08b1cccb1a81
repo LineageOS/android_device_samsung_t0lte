@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_b8901fee",
+        "filename": "init/init_t0lte.c",
+        "patchSetId": 16
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2014-03-06T18:34:19Z",
+      "side": 1,
+      "message": "I\u0027m not sure what i was high on that particular day, but these few lines are completely unecessary. \n\nRename init_t0lte_properties on line 40 to vendor_load_properties and get rid of this useless garbage.",
+      "revId": "d4a3dd2901af75f14b65510263df08b1cccb1a81",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
