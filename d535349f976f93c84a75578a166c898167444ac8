@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_c8477d1d",
+        "filename": "libsensors/AkmSensor.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 11604
+      },
+      "writtenOn": "2016-08-30T23:52:22Z",
+      "side": 0,
+      "message": "i think it\u0027s meant to be something like this, don\u0027t just remove it",
+      "revId": "d535349f976f93c84a75578a166c898167444ac8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
