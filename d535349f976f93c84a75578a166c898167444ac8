@@ -16,6 +16,23 @@
       "revId": "d535349f976f93c84a75578a166c898167444ac8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1fa4df85_885185db",
+        "filename": "libsensors/AkmSensor.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 6334
+      },
+      "writtenOn": "2016-08-30T23:55:30Z",
+      "side": 0,
+      "message": "just bounds check what here, \n\n   what \u003c 0 ? 0 : what",
+      "revId": "d535349f976f93c84a75578a166c898167444ac8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
