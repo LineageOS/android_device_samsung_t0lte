@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_48c38dee",
+        "filename": "libsensors/AkmSensor.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 14693
+      },
+      "writtenOn": "2016-08-31T13:18:15Z",
+      "side": 1,
+      "message": "This doesn\u0027t set the value of what, so the value of what remains unchanged.",
+      "revId": "358e42852a4e594e897eff5c263202e8889fb211",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
