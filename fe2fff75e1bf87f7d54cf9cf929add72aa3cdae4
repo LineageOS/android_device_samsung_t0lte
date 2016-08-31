@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_b3cf127e",
+        "filename": "libsensors/AkmSensor.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 14693
+      },
+      "writtenOn": "2016-08-31T17:57:37Z",
+      "side": 1,
+      "message": "indentation",
+      "range": {
+        "startLine": 187,
+        "startChar": 2,
+        "endLine": 189,
+        "endChar": 3
+      },
+      "revId": "fe2fff75e1bf87f7d54cf9cf929add72aa3cdae4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
