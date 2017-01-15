@@ -13,5 +13,3 @@ allow qmiproxy property_socket:sock_file { open write };
 allow qmiproxy init:unix_stream_socket connectto;
 
 allow qmiproxy radio_prop:property_service { set };
-
-allow qmiproxy system_file:file { execmod };
