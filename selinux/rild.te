@@ -1,6 +1,3 @@
-#allow rild qmux_radio_socket:dir { write remove_name search add_name };
-#allow rild qmux_radio_socket:sock_file { write create unlink setattr };
-#allow rild qmuxd:unix_stream_socket connectto;
 qmux_socket(rild);
 binder_use(rild)
 
@@ -25,6 +22,7 @@ allow rild system_data_file:dir w_dir_perms;
 allow rild rild:process execmem;
 allow rild diagnostic_device:chr_file { read write open };
 allow rild radio_data_file:dir { setattr };
+allow rild radio_data_file:lnk_file read;
 allow rild init:unix_stream_socket { read write };
 allow rild proc_net:file { write };
 
@@ -37,3 +35,7 @@ allow rild unlabeled:file { open read getattr };
 
 allow rild at_distributor:dir { search };
 allow rild at_distributor:file { read open getattr };
+
+allow rild socket_device:dir { remove_name write add_name };
+allow rild socket_device:sock_file { unlink write create setattr };
+allow rild radio_data_file:lnk_file read;

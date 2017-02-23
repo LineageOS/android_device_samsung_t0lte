@@ -5,3 +5,10 @@ allow ueventd { radio_efs_file }:dir search;
 allow ueventd { firmware_mfc }:file r_file_perms;
 allow ueventd { firmware_camera }:dir search;
 allow ueventd firmware_camera:file { read open getattr };
+
+allow ueventd firmware_exynos:dir search;
+allow ueventd firmware_exynos:file { getattr open read };
+allow ueventd firmware_exynos:file read;
+
+allow ueventd radio_device:file { getattr write open };
+allow ueventd sysfs_bluetooth_writable:file { open write };

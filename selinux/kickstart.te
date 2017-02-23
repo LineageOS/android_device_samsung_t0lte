@@ -30,6 +30,7 @@ allow kickstart radio_device:chr_file { write ioctl getattr };
 allow kickstart shell_exec:file rx_file_perms;
 # Toolbox commands for firmware dd
 allow kickstart system_file:file execute_no_trans;
+allow kickstart toolbox_exec:file { execute execute_no_trans getattr open read };
 
 # Access to /dev/block/platform/msm_sdcc.1/by-name/m9kefs2
 allow kickstart block_device:dir { getattr write search };
@@ -51,3 +52,5 @@ allow kickstart usbfs:dir { search };
 allow kickstart vfat:dir { search };
 allow kickstart log_device:chr_file { open write };
 allow kickstart rild_exec:file { getattr execute read open };
+
+allow kickstart qcks_exec:file { getattr entrypoint read open execute };
