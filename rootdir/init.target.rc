@@ -7,8 +7,7 @@ on init
     export VIBE_PIPE_PATH /dev/pipes
     mkdir /dev/pipes 0771 shell shell
 
-on post-fs-data
- #MDM requirement
+# MDM requirement
     mkdir /data/cp_log
     chmod 0775 /data/cp_log
     chown system radio /data/cp_log
@@ -39,17 +38,41 @@ on post-fs-data
     rmdir /tombstones/efs
     mkdir /tombstones/efs 771 system system
 
+on post-fs-data
+    chmod 0666 /proc/cmdline
+    symlink /data/user_de/0/com.android.providers.telephony/databases /data/data/com.android.providers.telephony/databases
+    symlink /data/user_de/0/com.android.providers.telephony/shared_prefs /data/data/com.android.providers.telephony/shared_prefs
+
+# Wifi
+    write /data/.cid.info 0
+    restorecon /data/.cid.info
+
     chown system radio /dev/block/platform/dw_mmc/by-name
     chmod 0775 /dev/block/platform/dw_mmc/by-name
 
-    # QCRIL
-    # Create QMUX deamon socket area
-    mkdir /dev/socket/qmux_radio 0777 radio radio
-    chmod 2777 /dev/socket/qmux_radio
-    mkdir /dev/socket/qmux_audio 0770 media audio
-    chmod 2770 /dev/socket/qmux_audio
-    mkdir /dev/socket/qmux_gps 0770 gps gps
-    chmod 2770 /dev/socket/qmux_gps
+# qmuxd
+    mkdir /dev/socket/qmux_radio 2777 radio radio
+    mkdir /dev/socket/qmux_audio 2777 media audio
+    mkdir /dev/socket/qmux_gps 2777 gps gps
+    mkdir /dev/socket/qmux_bluetooth 2777 media bluetooth
+
+    chmod 0666 /dev/socket/qmux_bluetooth/qmux_connect_socket
+    chown media bluetooth /dev/socket/qmux_bluetooth/qmux_connect_socket
+
+    chmod 0666 /dev/socket/qmux_gps/qmux_connect_socket
+    chown gps gps /dev/socket/qmux_gps/qmux_connect_socket
+
+    chmod 0666 /dev/socket/qmux_audio/qmux_connect_socket
+    chown media audio /dev/socket/qmux_audio/qmux_connect_socket
+
+    chmod 0666 /dev/socket/qmux_radio/qmux_connect_socket
+    chown radio radio /dev/socket/qmux_radio/qmux_connect_socket
+
+    chmod 0666 /dev/socket/qmux_radio/proxy_qmux_connect_socket
+    chown radio radio /dev/socket/qmux_radio/proxy_qmux_connect_socket
+
+    chmod 0666 /dev/socket/qmux_radio/proxy_tether_connect_socket
+    chown radio radio /dev/socket/qmux_radio/proxy_tether_connect_socket
 
     # Allow QMUX daemon to assign port open wait time
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
@@ -63,24 +86,19 @@ on post-fs-data
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
-    # Restorecon
-    restorecon /efs/FactoryApp/keystr
-    restorecon /efs/FactoryApp/factorymode
-    restorecon /efs/FactoryApp/serial_no
-    restorecon /efs/wifi/.mac.info
-    restorecon /tombstones
-    restorecon /tombstones/qcks
-    restorecon /tombstones/qcks/acdb.bin
-    restorecon /tombstones/qcks/efs1.bin
-    restorecon /tombstones/qcks/efs2.bin
-    restorecon /tombstones/qcks/efs3.bin
+# Restorecon
+    restorecon_recursive /efs
+    restorecon_recursive /tombstones
     restorecon /tombstones/qcks/temp.dump
+    restorecon /data/.cid.info
+    restorecon /data/ISP_CV
+    restorecon_recursive /efs/wifi
 
-    # for AT distributor
+# for AT distributor
     chown system radio /sys/module/cpuidle_exynos4/parameters/enable_mask
     chmod 0664 /sys/module/cpuidle_exynos4/parameters/enable_mask
 
-    # Waketime fot fast dormancy
+# Waketime for fast dormancy
     chown system radio /sys/devices/platform/mdm_hsic_pm0/waketime
     chmod 0660 /sys/devices/platform/mdm_hsic_pm0/waketime
 
@@ -115,11 +133,11 @@ on post-fs-data
     mkdir /data/misc/location/mq 0770 gps gps
     mkdir /data/misc/location/xtwifi 0770 gps gps
 
-    chmod 0755 /proc/cmdline
-
-on fs
-    # zram
-    swapon_all /fstab.smdk4x12
+on property:init.svc.macloader=stopped
+    chown system root /data/.cid.info
+    chmod 0666 /data/.cid.info
+    chown system root /data/.rev
+    chmod 0666 /data/.rev
 
 on boot
 
