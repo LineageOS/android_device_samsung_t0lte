@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa5d592f_35f58983",
+        "filename": "overlay/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 14693
+      },
+      "writtenOn": "2017-02-23T18:47:55Z",
+      "side": 1,
+      "message": "This line is unnecessary, since we don\u0027t even have the correct sensor.",
+      "revId": "0206d6275901476f6696de131605dba5ecbb0bec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
