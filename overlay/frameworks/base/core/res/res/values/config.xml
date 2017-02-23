@@ -178,4 +178,10 @@
          format is UMTS|LTE|... -->
     <string translatable="false" name="config_radio_access_family">GSM|GPRS|EDGE|WCDMA|LTE</string>
 
+    <!-- Doze mode -->
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <integer name="config_screenBrightnessDoze">25</integer>
+    <bool name="config_dozeAfterScreenOff">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+
 </resources>
