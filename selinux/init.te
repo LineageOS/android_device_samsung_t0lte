@@ -1,3 +1,8 @@
+allow init debugfs:dir mounton;
+allow init radio_device:dir relabelto;
+allow init radio_device:file { relabelto setattr };
+allow init radio_device:lnk_file relabelto;
+allow init radio_device:lnk_file setattr;
 allow init wpa_socket:unix_dgram_socket { bind create };
 allow init init:process { execmem };
 allow init init:capability { sys_module };
@@ -19,3 +24,7 @@ domain_trans(init, rootfs, SMD-daemon)
 allow init shell_data_file:lnk_file { getattr };
 
 allow init rild:process noatsecure;
+
+allow init sysfs_bluetooth_writable:lnk_file { read getattr };
+allow init sysfs_bluetooth_writable:file getattr;
+allow init socket_device:sock_file setattr;

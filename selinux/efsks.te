@@ -1,0 +1,5 @@
+type efsks, domain;
+type efsks_exec, exec_type, file_type;
+
+init_daemon_domain(efsks)
+domain_trans(init, rootfs, efsks)
