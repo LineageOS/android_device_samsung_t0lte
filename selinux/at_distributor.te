@@ -31,3 +31,6 @@ allow at_distributor init:unix_stream_socket { connectto };
 allow at_distributor radio_prop:property_service { set };
 
 allow at_distributor sysfs_wake_lock:file { read write open };
+
+allow at_distributor proc:file { getattr open read };
+

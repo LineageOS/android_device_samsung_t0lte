@@ -6,3 +6,7 @@ allow wpa smem_log_device:chr_file rw_file_perms;
 allow wpa proc_net:file write;
 allow wpa wifi_data_file:sock_file { write };
 allow wpa log_device:chr_file { open write };
+
+allow wpa radio_device:chr_file { open read };
+allow wpa sysfs_bluetooth_writable:dir search;
+allow wpa sysfs_bluetooth_writable:lnk_file { read getattr };
