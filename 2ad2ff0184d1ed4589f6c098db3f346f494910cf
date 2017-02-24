@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa5d592f_aea006f5",
+        "filename": "BoardCommonConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 14693
+      },
+      "writtenOn": "2017-02-24T16:13:27Z",
+      "side": 1,
+      "message": "Would it be possible for you to split this into multiple lines?",
+      "revId": "2ad2ff0184d1ed4589f6c098db3f346f494910cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
