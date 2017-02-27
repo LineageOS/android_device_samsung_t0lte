@@ -57,6 +57,11 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
+# RIL
+PRODUCT_PACKAGES += \
+    libsecril-client \
+    libsecril-client-sap
+
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
@@ -82,7 +87,8 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    mobiledata.interfaces=pdp0,gprs,ppp0,rmnet0,rmnet1
+    mobiledata.interfaces=pdp0,gprs,ppp0,rmnet0,rmnet1 \
+    ro.telephony.ril_class=smdk4x12QComRIL
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -93,7 +99,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Include common makefile
+$(call inherit-product, vendor/samsung/t0lte/t0lte-common-vendor.mk)
+
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 $(call inherit-product, device/samsung/smdk4412-qcom-common/common.mk)
-
-$(call inherit-product-if-exists, vendor/samsung/t0lte/t0lte-common-vendor.mk)
