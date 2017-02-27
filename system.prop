@@ -10,3 +10,4 @@ ro.ril.telephony.mqanelements=6
 ro.hdcp2.rx=tz
 ro.sf.lcd_density=320
 ro.lcd_min_brightness=20
+ro.egl.destroy_after_detach=true
