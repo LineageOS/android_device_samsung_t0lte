@@ -1,2 +1,2 @@
-allow debuggerd log_device:chr_file { read open write };
-allow debuggerd log_device:dir { search };
+allow debuggerd gpu_device:chr_file { read getattr open };
+allow debuggerd video_device:chr_file open;
