@@ -1,0 +1,4 @@
+allow audioserver qmuxd:unix_stream_socket connectto;
+allow audioserver self:socket create;
+allow audioserver socket_device:dir { write add_name };
+allow audioserver socket_device:sock_file { write create setattr };
