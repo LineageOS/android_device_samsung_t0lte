@@ -1,0 +1,1 @@
+allow radio_device sysfs:filesystem associate;

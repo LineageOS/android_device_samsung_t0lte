@@ -1,9 +1,9 @@
-allow system_server device:chr_file { ioctl };
-allow system_server uhid_device:file { read write open ioctl };
-allow system_server uhid_device:chr_file { read write open ioctl };
-allow system_server efs_file:dir { search };
-allow system_server efs_file:file r_file_perms;
-allow system_server dex2oat_exec:file { read open };
-allow system_server log_device:chr_file { open write };
+allow system_server efs_file:dir search;
+allow system_server uhid_device:chr_file { ioctl open read write };
 allow system_server self:capability sys_module;
-allow system_server log_device:dir { search };
+allow system_server sensors_device:chr_file { read write };
+allow system_server socket_device:dir { remove_name write add_name };
+allow system_server efs_file:file { open read };
+allow system_server qmuxd:unix_stream_socket connectto;
+allow system_server socket_device:sock_file { write create setattr };
+allow system_server system_file:file execmod;

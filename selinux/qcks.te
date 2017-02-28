@@ -1,0 +1,22 @@
+type qcks, domain;
+type qcks_exec, exec_type, file_type;
+
+init_daemon_domain(qcks)
+domain_trans(init, rootfs, qcks)
+
+allow qcks efsks_exec:file { read getattr open execute execute_no_trans };
+allow qcks ks_exec:file { read getattr open execute execute_no_trans };
+allow qcks mmc_block_device:blk_file { read open write getattr };
+allow qcks radio_device:chr_file { read getattr open ioctl };
+allow qcks self:capability setuid;
+allow qcks serial_device:chr_file { read write getattr open ioctl };
+allow qcks vfat:file { read getattr open };
+allow qcks radio_data_file:dir search;
+allow qcks radio_data_file:file { setattr read write getattr open };
+allow qcks vfat:dir search;
+allow qcks shell_exec:file { execute_no_trans read execute open };
+allow qcks radio_device:dir search;
+allow qcks unlabeled:dir search;
+allow qcks unlabeled:file { open read write getattr setattr };
+allow qcks shell_exec:file getattr;
+allow qcks toolbox_exec:file { execute execute_no_trans getattr open read };
