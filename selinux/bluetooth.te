@@ -4,3 +4,4 @@ allow bluetooth wifi_data_file:file { read open };
 allow bluetooth radio_device:file write;
 allow bluetooth sysfs_bluetooth_writable:dir search;
 allow bluetooth sysfs_bluetooth_writable:lnk_file read;
+allow bluetooth sysfs:file write;
