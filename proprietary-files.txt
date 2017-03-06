@@ -26,6 +26,3 @@ system/lib/libqmiservices.so
 system/lib/libril-qcril-hook-oem.so
 system/lib/libsec-ril.so
 system/lib/libxml.so
-system/usr/idc/sec_e-pen.idc
-system/usr/keylayout/sec_e-pen.kl
-system/usr/keylayout/sec_touchkey.kl
