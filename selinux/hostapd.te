@@ -1,0 +1,3 @@
+allow hostapd radio_device:chr_file rw_file_perms;
+allow hostapd sysfs_bluetooth_writable:dir search;
+allow hostapd sysfs_bluetooth_writable:lnk_file rw_file_perms;
