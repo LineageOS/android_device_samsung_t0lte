@@ -19,8 +19,6 @@
 
 LOCAL_PATH := device/samsung/t0lte
 
-TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 BOARD_BLUEDROID_VENDOR_CONF := $(LOCAL_PATH)/bluetooth/vnd_t0lte.txt
@@ -61,7 +59,6 @@ PRODUCT_COPY_FILES += \
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := mdm9x35
-BOARD_RIL_CLASS := ../../../device/samsung/t0lte/ril
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := GT-N7105,GT-N7105T,SGH-I317,SGH-I317M,SGH-T889,t0lte,t0lteatt,t0ltecan,t0ltedv,t0ltektt,t0lteskt,t0ltetmo,t0ltevl,t0ltexx
