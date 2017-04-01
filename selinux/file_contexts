@@ -1,6 +1,7 @@
 /system/vendor/firmware/SlimISP(/.*)?		u:object_r:camera_data_file:s0
 
 /data/.cid.info					u:object_r:wifi_data_file:s0
+/efs/wifi/.mac.info				u:object_r:wifi_data_file:s0
 
 /sys/class/rfkill(/.*)?				u:object_r:sysfs_bluetooth_writable:s0
 /efs/bluetooth/bt_addr				u:object_r:bluetooth_data_file:s0
