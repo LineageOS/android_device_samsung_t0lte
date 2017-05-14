@@ -31,9 +31,9 @@ TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 ifeq ($(TARGET_VOICE_TECH), cdma)
-TARGET_KERNEL_CONFIG := cyanogenmod_t0ltecdma_defconfig
+TARGET_KERNEL_CONFIG := lineageos_t0ltecdma_defconfig
 else
-TARGET_KERNEL_CONFIG := cyanogenmod_t0lte_defconfig
+TARGET_KERNEL_CONFIG := lineageos_t0lte_defconfig
 endif
 
 # Recovery
