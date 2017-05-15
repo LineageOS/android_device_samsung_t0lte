@@ -52,6 +52,27 @@ void vendor_load_properties()
         property_set("ro.build.description", "t0ltespr-user 4.4.2 KOT49H L900VPUCNE2 release-keys");
         property_set("ro.build.fingerprint", "samsung/t0ltespr/t0ltespr:4.4.2/KOT49H/L900VPUCNE2:user/release-keys");
         property_set("ro.build.product", "t0ltespr");
+    } else if (bootloader.find("E250K") != std::string::npos) {
+        /* SHV-E250K (KT Olleh) */
+        property_set("ro.product.model", "SHV-E250K");
+        property_set("ro.product.device", "t0ltektt");
+        property_set("ro.build.description", "t0ltektt-user 4.4.2 KOT49H E250KKTUKNI1 release-keys");
+        property_set("ro.build.fingerprint", "samsung/t0ltektt/t0ltektt:4.4.2/KOT49H/E250KKTUKNI1:user/release-keys");
+        property_set("ro.build.product", "t0ltektt");
+    } else if (bootloader.find("E250S") != std::string::npos) {
+        /* SHV-E250S (SK Telecom) */
+        property_set("ro.product.model", "SHV-E250S");
+        property_set("ro.product.device", "t0lteskt");
+        property_set("ro.build.description", "t0lteskt-user 4.4.2 KOT49H E250SKSUKNI2 release-keys");
+        property_set("ro.build.fingerprint", "samsung/t0lteskt/t0lteskt:4.4.2/KOT49H/E250SKSUKNI2:user/release-keys");
+        property_set("ro.build.product", "t0lteskt");
+    } else if (bootloader.find("E250L") != std::string::npos) {
+        /* SHV-E250L (LG Uplus) */
+        property_set("ro.product.model", "SHV-E250L");
+        property_set("ro.product.device", "t0ltelgt");
+        property_set("ro.build.description", "t0ltelgt-user 4.4.2 KOT49H E250LKLUKNL1 release-keys");
+        property_set("ro.build.fingerprint", "samsung/t0ltelgt/t0ltelgt:4.4.2/KOT49H/E250LKLUKNL1:user/release-keys");
+        property_set("ro.build.product", "t0ltelgt");  
     } else {
         /* Fall back to GT-N7105 (International LTE) */
         property_set("ro.product.model", "GT-N7105");
