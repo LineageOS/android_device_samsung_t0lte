@@ -1,11 +1,11 @@
 [
     {
-        "repository": "LineageOS/device_samsung_smdk4412-common",
+        "repository": "LineageOS/android_device_samsung_smdk4412-common",
         "target_path": "device/samsung/smdk4412-common",
         "branch":      "cm-14.1"
     },
     {
-        "repository": "LineageOS/device_samsung_smdk4412-qcom-common",
+        "repository": "LineageOS/android_device_samsung_smdk4412-qcom-common",
         "target_path": "device/samsung/smdk4412-qcom-common",
         "branch":      "cm-14.1"
     },
