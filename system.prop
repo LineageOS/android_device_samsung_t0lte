@@ -11,3 +11,11 @@ ro.hdcp2.rx=tz
 ro.sf.lcd_density=320
 ro.lcd_min_brightness=20
 ro.egl.destroy_after_detach=true
+
+# Hardware Info
+ro.device.chipset=Exynos 4412 Quad
+ro.device.cpu=Quad-core 1.6 GHz Cortex-A9
+ro.device.gpu=Mali-400MP4
+ro.device.rear_cam=8 MP
+ro.device.front_cam=1.9 MP
+ro.device.screen_res=720x1280
