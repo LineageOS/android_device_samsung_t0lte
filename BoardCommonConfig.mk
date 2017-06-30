@@ -41,7 +41,6 @@ endif
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_t0lte
-TARGET_UNIFIED_DEVICE := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/samsung/t0lte/rootdir/fstab.smdk4x12
