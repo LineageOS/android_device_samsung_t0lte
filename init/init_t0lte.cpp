@@ -24,7 +24,7 @@
 #include "log.h"
 #include "util.h"
 
-void property_set(char const prop[], char const value[])
+void property_override(char const prop[], char const value[])
 {
     prop_info *pi;
 
