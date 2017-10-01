@@ -86,7 +86,14 @@ void vendor_load_properties()
         property_override("ro.product.device", "t0ltelgt");
         property_override("ro.build.description", "t0ltelgt-user 4.4.2 KOT49H E250LKLUKNL1 release-keys");
         property_override("ro.build.fingerprint", "samsung/t0ltelgt/t0ltelgt:4.4.2/KOT49H/E250LKLUKNL1:user/release-keys");
-        property_override("ro.build.product", "t0ltelgt");  
+        property_override("ro.build.product", "t0ltelgt");
+    } else if (bootloader.find("SC02E") != std::string::npos) {
+        /* SC-02E (NTT Docomo) */
+        property_override("ro.product.model", "SC-02E");
+        property_override("ro.product.device", "t0ltejpn");
+        property_override("ro.build.description", "t0ltejpn-user 4.4.2 KOT49H SC02EOMUBNJ2 release-keys");
+        property_override("ro.build.fingerprint", "samsung/t0ltejpn/t0ltejpn:4.4.2/KOT49H/SC02EOMUBNJ2:user/release-keys");
+        property_override("ro.build.product", "t0ltejpn");
     } else {
         /* Fall back to GT-N7105 (International LTE) */
         property_override("ro.product.model", "GT-N7105");
