@@ -8,3 +8,4 @@ allow init tmpfs:lnk_file create;
 allow init sysfs_bluetooth_writable:lnk_file { read getattr };
 allow init sysfs_bluetooth_writable:file getattr;
 allow init socket_device:sock_file setattr;
+allow init sysfs_mdnie:lnk_file read;

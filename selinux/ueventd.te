@@ -2,3 +2,4 @@ allow ueventd radio_device:file { getattr write open };
 allow ueventd sysfs_bluetooth_writable:file { open write };
 allow ueventd firmware_exynos:dir search;
 allow ueventd firmware_exynos:file { getattr open read };
+allow ueventd sysfs_mdnie:file { open write };
