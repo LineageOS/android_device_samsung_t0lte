@@ -1,0 +1,5 @@
+type sysfs_mdnie, fs_type, sysfs_type;
+
+allow system_app sysfs_mdnie:dir search;
+allow system_app sysfs_mdnie:lnk_file read;
+allow system_app sysfs_mdnie:file { write getattr open };

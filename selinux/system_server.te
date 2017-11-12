@@ -7,3 +7,6 @@ allow system_server efs_file:file { open read };
 allow system_server qmuxd:unix_stream_socket connectto;
 allow system_server socket_device:sock_file { write create setattr };
 allow system_server system_file:file execmod;
+allow system_server sysfs_mdnie:dir search;
+allow system_server sysfs_mdnie:lnk_file read;
+allow system_server sysfs_mdnie:file { read getattr open write };
