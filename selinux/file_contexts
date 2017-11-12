@@ -33,6 +33,10 @@
 /efs/FactoryApp(/.*)?				u:object_r:radio_data_file:s0
 /efs/imei					u:object_r:radio_data_file:s0
 
+/sys/class/mdnie(/.*)?				u:object_r:sysfs_mdnie:s0
+/sys/devices/platform/samsung-pd.2/mdnie(/.*)?	u:object_r:sysfs_mdnie:s0
+/sys/bus/platform/devices/mdnie(/.*)?		u:object_r:sysfs_mdnie:s0
+
 /dev/block/mmcblk0p0				u:object_r:mmc_block_device:s0
 /dev/block/mmcblk0p1				u:object_r:mmc_block_device:s0
 /dev/block/mmcblk0p2				u:object_r:mmc_block_device:s0
