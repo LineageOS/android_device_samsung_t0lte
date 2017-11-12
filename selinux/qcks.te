@@ -20,3 +20,7 @@ allow qcks unlabeled:dir search;
 allow qcks unlabeled:file { open read write getattr setattr };
 allow qcks shell_exec:file getattr;
 allow qcks toolbox_exec:file { execute execute_no_trans getattr open read };
+allow qcks block_device:dir write;
+allow qcks init:unix_stream_socket connectto;
+allow qcks property_socket:sock_file write;
+allow qcks radio_prop:property_service set;
