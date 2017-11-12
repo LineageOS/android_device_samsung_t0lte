@@ -2,8 +2,6 @@ bin/efsks
 bin/ks
 bin/qcks
 bin/qmuxd
-etc/Diag.cfg
-etc/Diag_zero.cfg
 lib/libakm.so
 lib/libcsd-client.so
 lib/libloc_api_v02.so
