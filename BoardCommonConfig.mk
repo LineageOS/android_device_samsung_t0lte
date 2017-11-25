@@ -61,6 +61,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
+# Stylus gestures
+STYLUS_GESTURES := true
+
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := mdm9x35
