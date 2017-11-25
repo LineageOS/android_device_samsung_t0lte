@@ -91,8 +91,8 @@ void vendor_load_properties()
         /* SC-02E (NTT Docomo) */
 	property_override("ro.product.model", "SC-02E");
 	property_override("ro.product.device", "t0ltejpn");
-	property_override("ro.build.description", "t0ltejpn-user 4.3 KOT49H SC02EOMUBNJ2 release-keys");
-	property_override("ro.build.fingerprint", "samsung/t0ltejpn/t0ltejpn:4.4.2/KOT49H/SC02EOMUBNJ2:user/release-keys");
+	property_override("ro.build.description", "t0ltejpn-user 4.3 JSS15J SC02EOMUBNJ2 release-keys");
+	property_override("ro.build.fingerprint", "samsung/t0ltejpn/t0ltejpn:4.3/JSS15J/SC02EOMUBNJ2:user/release-keys");
 	property_override("ro.build.product", "t0ltejpn");
     } else {
         /* Fall back to GT-N7105 (International LTE) */
