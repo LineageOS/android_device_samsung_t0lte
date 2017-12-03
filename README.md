@@ -1,9 +1,10 @@
-## Device configuration for Samsung Galaxy Note 2 LTE (GSM).
+## Device configuration for Samsung Galaxy Note 2 LTE family.
 
 #### Supported variants:
-* GT-N7105  (EUR)
-* SGH-I317  (AT&T)
-* SGH-T889  (TMO)
+* GT-N7105/N7105T
+* SGH-I317/I317M
+* SGH-T889/T889V
+* SHV-E250S/E250K/E250L
 
  ![Galaxy Note 2](http://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-note-ii-n7100-new2.jpg "Galaxy Note 2") 
 
