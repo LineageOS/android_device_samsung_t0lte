@@ -1,2 +1,2 @@
-type mmc_block_device, dev_type;
+type efs_block_device, dev_type;
 type efs_device_file, file_type;

@@ -6,7 +6,7 @@ domain_trans(init, rootfs, qcks)
 
 allow qcks efsks_exec:file { read getattr open execute execute_no_trans };
 allow qcks ks_exec:file { read getattr open execute execute_no_trans };
-allow qcks mmc_block_device:blk_file { read open write getattr };
+allow qcks efs_block_device:blk_file { read open write getattr };
 allow qcks radio_device:chr_file { read getattr open ioctl };
 allow qcks self:capability setuid;
 allow qcks serial_device:chr_file { read write getattr open ioctl };
