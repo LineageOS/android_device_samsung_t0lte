@@ -1,2 +1,2 @@
 allow fsck self:capability dac_override;
-allow fsck mmc_block_device:blk_file { ioctl read write getattr open };
+allow fsck efs_block_device:blk_file { ioctl read write getattr open };
