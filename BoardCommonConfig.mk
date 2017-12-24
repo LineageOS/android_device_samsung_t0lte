@@ -57,9 +57,11 @@ PRODUCT_PACKAGES += \
 
 TARGET_USERIMAGES_USE_F2FS := true
 
-# keylayout
+# Keylayouts and input devices
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+    $(LOCAL_PATH)/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
+    $(LOCAL_PATH)/usr/keylayout/sec_e-pen.kl:system/usr/keylayout/sec_e-pen.kl \
+    $(LOCAL_PATH)/usr/idc/sec_e-pen.idc:system/usr/idc/sec_e-pen.idc
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
