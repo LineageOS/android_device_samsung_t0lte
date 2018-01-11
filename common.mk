@@ -57,11 +57,6 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
-# RIL
-PRODUCT_PACKAGES += \
-    libsecril-client \
-    libsecril-client-sap
-
 PRODUCT_COPY_FILES += \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
